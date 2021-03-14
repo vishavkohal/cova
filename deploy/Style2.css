@@ -1,0 +1,306 @@
+﻿body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    padding: 100px;
+}
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background-image: url(raw/final.png);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.banner h2{
+    font-size: 3em;
+    color: #fff;
+    font-weight:500;
+    line-height: 1.5em;
+
+}
+    .banner h2 span {
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    .banner h3{
+        font-size: 1.5em;
+        color: #fff;
+        font-weight: 500;
+
+
+    }
+.btn {
+    position: relative;
+    background: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.btn2 {
+    position:center;
+    background: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-right: 365px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+header
+{
+position: fixed;
+top:0;
+left:0;
+width: 100%;
+padding: 15px 85px;
+z-index: 1000;
+display: flex;
+justify-content: space-between;
+align-items: center;
+transition: 0.4s;
+}
+ header.sticky{
+    background:#fff;
+    padding:21px 85px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+ header .logo {
+        color: #fff;
+        font-size: 24px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    header.sticky .logo{
+        color:#111;
+    }
+
+    header ul{
+        position:relative;
+        display:flex
+    }
+
+    header ul li{
+     position:relative;
+     list-style: none;
+
+    }
+    header.sticky ul li a{
+        color:#111;
+
+    }
+    header ul li a {
+        position:relative;
+        display:inline-block;
+        margin: 0 15px;
+        color: #fff;
+        text-decoration:none;
+
+    }
+.headingM {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight:700;
+    color: #fff;
+}
+
+.heading{
+    width:100%;
+    text-align:center;
+    font-size:24px;
+    margin-bottom: 30px;
+    color: #111;
+}
+.services{
+    background:#fff;
+}
+.services .content{
+    display:flex;
+    justify-content:center;
+        flex-wrap:wrap;
+        flex-direction: row;
+}
+.services .content .servicesBx{
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 600px;
+    margin:20px;
+    text-align: center;
+    transition: 0.5s;
+
+}
+.services .content .servicesBx:hover{
+    background: #2196f3;
+}
+
+.services .content .servicesBx img
+{
+    max-width:80px;
+
+
+}
+.services .content .servicesBx h2{
+    font-size: 20px;
+    font-weight:600;
+}
+.symptom{
+    background-image: url(raw/symptom.png);
+    background-size: cover;
+    background-position: right;
+    align-content:space-between;
+    align-items:center;
+}
+.headingS{
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+.symptom .content{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    align-content:space-around;
+    margin-left:365px;
+
+}
+.symptom .content .symptombx{
+    width: 50%;
+    align-content:space-between;
+}
+    .symptom .content .symptombx h2 {
+        text-align:center;
+        font-size: 20px;
+        margin-bottom: 40px;
+        padding-top:20px;
+        padding-bottom:5px;
+        color: #fff;
+        font-weight:300;
+    }
+.prevention{
+    background:#fff;
+}
+    .prevention .content {
+        display: flex;
+        align-content:space-around;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+    }
+   .prevention .content .preventionBx {
+            padding: 40px 20px;
+            background: #222;
+            color: #fff;
+            max-width: 600px;
+            margin: 20px;
+            text-align: center;
+            transition: 0.5s;
+            overflow-wrap:break-word;
+        }
+.prevention .content .preventionBx:hover {
+    background: #2196f3;
+}
+
+.prevention .content .preventionBx img {
+    max-width: 80px;
+}
+@media (max-width:1040px){
+    header, 
+    header.sticky{
+        padding: 15px 85px;
+    }
+.menu{
+    position:fixed;
+    top: 66px;
+    left: -100%;
+    display: block;
+    padding: 100px 85px;
+    text-align:center;
+    width:100%;
+    height:100vh;
+    background:#fff;
+    transition: 0.5s;
+    z-index:999;
+    border-top: 1px solid rgba(0,0,0,0.2);
+
+}
+.menu.active{
+    left:0;
+}
+header ul li a{
+    color:#111;
+    font-size:24px;
+    margin:10px;
+
+}
+.toggle{
+    width: 40px;
+    height: 40px;
+    background:url(raw/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor:pointer;
+}
+    .toggle.active {
+        background: url(raw/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
+    .symptom {
+        background-image: url(raw/symptom.png);
+        background-size: cover;
+        background-position: right;
+        background-repeat:no-repeat;
+        align-content: space-between;
+        align-items: center;
+    }
+    .symptom .content {
+        display: inline-grid;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items:center;
+        align-content: space-around;
+        margin-left:unset;
+    }
+
+        .symptom .content .symptombx {
+            width: 50%;
+            align-content: space-between;
+            align-items:center;
+        }
+
+ .symptom .content .symptombx h2 {
+                text-align: center;
+                font-size: 20px;
+                margin-bottom: 40px;
+                padding-top: 20px;
+                padding-bottom: 5px;
+                color: #fff;
+                font-weight: 300;
+            }
+}
